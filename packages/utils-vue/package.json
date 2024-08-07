@@ -1,0 +1,58 @@
+{
+  "name": "@double_ming/utils-vue",
+  "version": "1.0.4",
+  "description": "支持等比缩放、宽度占满、高度占满、宽或高等比缩放，满足最大占满容器、宽高填充整个容器不进行等比缩放等数字大屏适配 vue组件",
+  "main": "index.js",
+  "module": "dist/utils-vue.esm-bundler.js",
+  "types": "dist/utils-vue.d.ts",
+  "keywords": [
+    "screen",
+    "big screen",
+    "auto fit",
+    "vue component",
+    "screen vue"
+  ],
+  "peerDependencies": {
+    "vue": "^3.4.21"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "dist"
+  ],
+   "exports": {
+    ".": {
+      "types": "./dist/utils-vue.d.ts",
+      "node": {
+        "production": "./dist/utils-vue.cjs.js",
+        "development": "./dist/utils-vue.cjs.js",
+        "default": "./index.js"
+      },
+      "module": "./dist/utils-vue.esm-bundler.js",
+      "import": "./dist/utils-vue.esm-bundler.js",
+      "require": "./index.js"
+    },
+    "./*": "./*"
+  },
+  "author": "doubleming",
+  "homepage": "https://doubleming.github.io/utils-lib/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doubleming/utils-lib.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/doubleming/utils-lib/issues"
+  },
+  "license": "ISC",
+   "buildOptions": {
+    "name": "DMScreenFitVue",
+    "formats": [
+      "esm-bundler",
+      "cjs",
+      "global"
+    ]
+  }
+}

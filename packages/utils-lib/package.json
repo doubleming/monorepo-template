@@ -1,0 +1,51 @@
+{
+  "name": "@double_ming/utils-lib",
+  "version": "1.0.4",
+  "description": "支持等比缩放、宽度占满、高度占满、宽或高等比缩放，满足最大占满容器、宽高填充整个容器不进行等比缩放等数字大屏适配",
+  "main": "index.js",
+  "module": "dist/utils-lib.esm-bundler.js",
+  "types": "dist/utils-lib.d.ts",
+  "files": [
+    "index.js",
+    "README.md",
+    "dist"
+  ],
+   "exports": {
+    ".": {
+      "types": "./dist/utils-lib.d.ts",
+      "node": {
+        "production": "./dist/utils-lib.cjs.js",
+        "development": "./dist/utils-lib.cjs.js",
+        "default": "./index.js"
+      },
+      "module": "./dist/utils-lib.esm-bundler.js",
+      "import": "./dist/utils-lib.esm-bundler.js",
+      "require": "./index.js"
+    },
+    "./*": "./*"
+  },
+  "keywords": [
+    "utils-lib"
+  ],
+  "author": "doubleming",
+  "homepage": "https://doubleming.github.io/utils-lib/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doubleming/utils-lib.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/doubleming/utils-lib/issues"
+  },
+  "license": "ISC",
+  "buildOptions": {
+    "name": "DMScreenFit",
+    "formats": [
+      "esm-bundler",
+      "cjs",
+      "global"
+    ]
+  }
+}
